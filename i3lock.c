@@ -427,7 +427,8 @@ static void handle_key_press(xcb_key_press_event_t *event) {
                 return;
             }
             break;
-
+        
+        case XKB_key_space: //eat spacebar
         case XKB_KEY_Delete:
         case XKB_KEY_KP_Delete:
             /* Deleting forward doesn’t make sense, as i3lock doesn’t allow you
